@@ -8,16 +8,21 @@
     <style>
         
     body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("blackbackground.jpg");
     background-color: black;
-    /* font-family: sans-serif; */
     margin:auto;
     width:1020px;;
     color:white;
+    font-family: sans-serif;
+    }
+    h1{
+        float:left;
     }
     
  .navpack{
-     background: rgb(57, 56, 56);
-     width:1020px;;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("blackbackground1.png");
+     /* background-color: rgba(32, 32, 32, 0.8); */
+     width:1020px;
      top:0;
      margin:0px,0px, 40px, 0px;
      padding-bottom:0px;
@@ -26,6 +31,7 @@
     #navimg{
    height:5rem;
    padding:0px;
+   float:left; 
 }
     nav ul {
         position: fixed;
@@ -34,18 +40,19 @@
         list-style-type: none;
         margin-top: 30px;
         padding: 0;
-        overflow: hidden;   
+        overflow: hidden; 
     }
 
     nav li a{
+    border-right: 1px solid rgb(163, 163, 163);
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    border-right: 1px solid rgb(163, 163, 163);
     float: right;
     }
+
     nav li a:hover {
     background-color: #555;
     color: white;
@@ -76,19 +83,111 @@
 }
 button{
     background-color:white;
-} 
+}
+#contentbackground{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("blackwood.jpg");
+    padding:30px;
+}
+#aidefinition{
+    margin-top:50px;
+    text-align: center;
+}
+#aidefinition ul {
+        width: 100%;
+        list-style-type: none;
+        padding: 30px;
+        overflow: hidden; 
+        margin-left: 190px;
+    }
+
+#aidefinition ul li {
+    border-right: 1px solid rgb(163, 163, 163);
+    /* display: block; */
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    float:left; 
+    }
+
+    #aidefinition ul li:last-child {
+    border-right: none;
+    }
+
+    #cyberchip{
+    height:2%;
+    width:2%;
+    }   
+
 #pagebreak{
     display:block;
+    text-align: center;
 }
+.stockimages{
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+}
+p{
+    color: rgb(196, 196, 196);
+}
+#aidevelopers{
+    Margin:100px 0px  30px 0px;
+   text-align: center
+}
+#devUnBias{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("blackwood.jpg");
+    float: left;
+}
+#devUnBias h5{
+    text-align: center;
+}
+#devUnBias ul {
+    margin-right:30px;
+    list-style-type: none;
+}
+#devInBias{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("blackwood.jpg");
+    float: right;
+}
+#devInBias h5{
+    text-align: center;
+}
+#devInBias ul {
+    margin-right:30px;
+    list-style-type: none;
+}
+#icon{
+    margin-left: 40%;
+}
+section{
+    width:80%;
+    margin-left:10%;
+}
+.separators{
+    width:300px;
+    float:left;
+    margin:30px;
+    text-align: center;
+}
+
+#leftseparator{
+    display:block;
+    float: left;
+}
+
+
+
+
+
 
     </style>
 </head>
 <body>
     <div class="navpack">  
-    <nav> 
-        <img id ="navimg" src="aiphoto1.jpg">  
+    <nav>   
+        <img id ="navimg" src="aiphoto1.jpg">
+        <h1>Artificial Intelligence</h1> 
         <ul>
-            <!-- <li> <img id ="navimg" src="aiphoto1.jpg"></li> -->
             <li> <a href="#aidefinition"> Definition </a></li>
             <li> <a href="#aihistory"> History</a></li>
             <li> <a href="#aibias"> Bias </a> </li>
@@ -104,16 +203,19 @@ button{
               <button>Join Our AI Newsletter</button>
     </div></div>
    
-
+    <div id="contentbackground">
     <h3 id="pagebreak">Introduction to Artificial Intelligence</h3>
-    <h5 id ="aidefinition">Definition</h5>
-    <p>Different articles have varieties of definition about Artificial Intelligent but for this document we have selected the following two definitions to give readers general idea.  Techopedia.com defines Artificial intelligence (AI) is an area of computer science that emphasizes the creation of intelligent machines that work and react like humans. Some of the activities computers with artificial intelligence are designed for include:</p> 
+    <div id ="aidefinition"><h5> So What Is AI?</h5>
+    <p>Artificial intelligence (AI) is an area of computer science that emphasizes the creation of intelligent machines that work and react like humans. This is done by creating the ability for a  computer program or a machine to think and learn on their own without being encoded with commands.. Some of the activities computers with artificial intelligence are designed for include:</p> 
         <ul>
             <li>Speech recognition</li> 
             <li>Learning Planning</li> 
             <li>Problem solving </li>
-        </ul>
-        <p>Artificial intelligence (AI) is the ability of computer program or a machine to think and learn. It is also a field of study which tries to make computers "smart". They work on their own without being encoded with commands.</p>
+        </ul></div>
+        <img id="icon" height="200px"
+        
+        src="https://www.iconspng.com/uploads/artificial-intelligence/artificial-intelligence.png"  alt="Artificial Intelligence PNG icon" />
+
         <h5 id ="aihistory">History</h5>
         <p>The term artificial intelligence was coined in 1956, but AI has become more popular today thanks to increased data volumes, advanced algorithms, and improvements in computing power and storage.
        <br> Early AI research in the 1950s explored topics like problem solving and symbolic methods. In the 1960s, the US Department of Defense took interest in this type of work and began training computers to mimic basic human reasoning. For example, the Defense Advanced Research Projects Agency (DARPA) completed street mapping projects in the 1970s. And DARPA produced intelligent personal assistants in 2003, long before Siri, Alexa or Cortana were household names.
@@ -123,26 +225,44 @@ button{
         <h5>How Artificial Intelligence is being used</h5>
 
         <p> Now days every industry has a high demand for AI capabilities. AI is helping human being in almost every part of our lives. To mention some of uses includes:</p>
+        
+        <section> <div Class="separators">
+        <img class="stockimages"
+        src="healthcare.jpeg"  alt="healthcare image" />
 
         <h4>Healthcare</h4>
-        <p>AI applications can provide personalized medicine and X-ray readings. Personal health care assistants can act as life coaches, reminding you to take your pills, exercise or eat healthier. </p>
+        <p>AI applications can provide personalized medicine and X-ray readings. Personal health care assistants can act as life coaches, reminding you to take your pills, exercise or eat healthier. </p></div>
 
+        <div Class="separators">
+        <img class="stockimages"
+        src="retail.jpeg"  alt="retail image" />
         <h4>Retail</h4>
-        <p> AI provides virtual shopping capabilities that offer personalized recommendations and discuss purchase options with the consumer. Stock management and site layout technologies will also be improved with AI.</p>
+        <p> AI provides virtual shopping capabilities that offer personalized recommendations and discuss purchase options with the consumer. Stock management and site layout technologies will also be improved with AI.</p></div>
 
+        <div Class="separators">
+        <img class="stockimages"
+        src="manufacturing.jpeg"  alt="manufacturing image" />
         <h4>Manufacturing</h4>
-        <p> AI can analyze factory IoT data as it streams from connected equipment to forecast expected load and demand using recurrent networks, a specific type of deep learning network used with sequence data.</p>
+        <p> AI can analyze factory IoT data as it streams from connected equipment to forecast expected load and demand using recurrent networks, a specific type of deep learning network used with sequence data.</p></div>
 
+        <div Class="separators">
+        <img class="stockimages"
+        src="bank.jpeg"  alt="bank image" />
         <h4>Banking</h4>
-        <p>Artificial Intelligence enhances the speed, precision and effectiveness of human efforts. In financial institutions, AI techniques can be used to identify which transactions are likely to be fraudulent, adopt fast and accurate credit scoring, as well as automate manually intense data management tasks.</p>
+        <p>Artificial Intelligence enhances the speed, precision and effectiveness of human efforts. In financial institutions, AI techniques can be used to identify which transactions are likely to be fraudulent, adopt fast and accurate credit scoring, as well as automate manually intense data management tasks.</p></div>
 
+        <div Class="separators">
+        <img class="stockimages"
+        src="transport.jpg"  alt="transport image" />
         <h4>Transport</h4>
-        <p>Self-driving train, metro and cars are now available.</p>
+        <p>Self-driving train, metro and cars are now available.</p></div>
         
+        <div Class="separators" id="clearseparator">
+        <img class="stockimages" src="tasks.jpg"  alt="tasks image" />
         <h4>Helping difficult tasks</h4>
-        <p>Some robotic systems are in progress to perform services like difficult surgeries, rescue during disaster, fire-fighting, pipe inspection, bomb disposal, exploration of dangerous/unknown environment.</p>
-
-        <h5 id ="aibias">Forms of bias: how unintentional bias happens</h5>
+        <p>Some robotic systems are in progress to perform services like difficult surgeries, rescue during disaster, fire-fighting, pipe inspection, bomb disposal, exploration of dangerous/unknown environment.</p></div> </section>
+        
+        <div id ="leftseparator"> <h5 id ="aibias"> Forms of bias: how unintentional bias happens</h5>
         <p>Algorithmic bias, as defined by Wikipedia occurs when a computer system reflects the implicit values of the humans who are involved in coding, collecting, selecting, or using data to train the algorithm.  
 
         <br>Bias can enter into Artificial Intelligence as a result of pre-existing cultural, social, or institutional expectations; because of technical limitations of their design; or by being used in unanticipated contexts or by audiences who are not considered in the software's initial design.
@@ -158,12 +278,36 @@ button{
         <br>Basically, if the data that the machine is fed contains unconscious bias, then the outcome of the machine learning will also contain that bias.
  
         <br>“It’s not that the programmer sits down and does this on purpose, it’s something that he or she just doesn’t know and that way, the algorithms of these outcomes become flawed.”
-        </p>
+        </p></div>
+
+       <img id="icon" height="200px" src="https://www.iconspng.com/uploads/artificial-intelligence/artificial-intelligence.png"  alt="Artificial Intelligence PNG icon" />
 
         <h5 id="aidevelopers">Ways developers are working to overcome bias in artificial intelligence</h5>
-        <p>It was previously thought that the purity of math would be the quick solution to easily overcoming bias. After all, a computer’s responses are just a physical process, and therefore should be unable unable to display bias. While the previous assumption was that AI would provide neutral data as a machine is incapable of developing a personal position on morality or ethical platforms, developers soon experienced the flaws in machine learning, and the pitfalls of algorithmic bias. Developers began searching for solutions to these various forms of bias, resulting in a series of changes, with some answers being simple, and others more complex.
 
-        <br>One of the most simple ways developers are working to fight algorithmic bias is by overcoming the lack of diversity in the development community. A more diverse group of contributors can help fight unintentional bias by providing more varied perspectives when creating artificial intelligence. More diverse creators can lead to more diverse and inclusive data. An example of this would be the AI who when given the search word “engineer” displayed mostly caucasian males. Had more women been involved in the creating environment for this tech, the issue may have been caught quicker or may not occured at all. 
+        <p>It was previously thought that the purity of math would be the quick solution to easily overcoming bias. After all, a computer’s responses are just a physical process, and therefore should be unable unable to display bias. While the previous assumption was that AI would provide neutral data as a machine is incapable of developing a personal position on morality or ethical platforms, developers soon experienced the flaws in machine learning, and the pitfalls of algorithmic bias. Developers began searching for solutions to these various forms of bias, resulting in a series of changes, with some answers being simple, and others more complex.</p>
+        
+        
+        <div id ="devInBias"><h5>Ways Developers are fighting Intentional Bias:</h5>
+            <ul><li>Auditing/Reviewing</li>
+                <li>User Input Control- Policing and Monitoring Software</li>
+                <li>Training AI’s with a solid base of well collected data</li>
+                <li>Compensating for cultural bias</li>
+            </ul></div>
+            
+            <div id ="devUnBias"><h5>Ways Developers are fighting Unintentional Bias:</h5>
+                <ul>
+                    <li>Experience- Give us a break, we’re learning!</li>
+                    <li>Diversity- The New Face Of Development</li>
+                    <li>Improving testing systems</li>
+                    <li>Collecting better data</li>
+                </ul></div>
+
+        </div>
+    
+        
+    
+
+        <!-- <br>One of the most simple ways developers are working to fight algorithmic bias is by overcoming the lack of diversity in the development community. A more diverse group of contributors can help fight unintentional bias by providing more varied perspectives when creating artificial intelligence. More diverse creators can lead to more diverse and inclusive data. An example of this would be the AI who when given the search word “engineer” displayed mostly caucasian males. Had more women been involved in the creating environment for this tech, the issue may have been caught quicker or may not occured at all. 
 
         <br>Another solution for writing unbiased algorithms is that developers are simply writing better code. As artificial intelligence gains popularity, developers are getting more experience in writing for AI and improving on anticipating common stumbling blocks based on previous issues and experiences. Developers now have higher standards, and better awareness when creating AI. The data is only as unbiased as the person creating it, and developers are now actively looking to make sure the data supplied is more diverse to match the diverse needs of the consumer. One of the most common ways this is being implemented is by improving testing systems. 
 
@@ -171,7 +315,7 @@ button{
 
         <br>Overcoming the bias of the consumer has proven to be a bit more tricky. User input affects machine learning dramatically, just ask anyone who used Twitter the day “TayTweets” was released. Developers are trying to creatively come up with solutions to account for and limit biased user data without overstepping the whole purpose, which is allowing the user to supply their own input. One of the ways this is being done is by compensating for cultural bias when writing code for AI. Artificially created systems reflect our society’s values. If you have an imperfect society providing data for machine learning, it’s no surprise the results of machine learning will ultimately reflect that culture’s various inherent forms of bias. Making sure AI systems are well trained on balanced data prior to being released for use helps combat the machine learning of cultural bias. Another option being considered and implemented is the policing and monitoring of AI software after it has been released. Observing AI in action and stepping in to take corrective measures when AI becomes too deviant from its intended purpose may help safeguard the integrity of the software. 
         </p>
-    
+     -->
 
     
 </body>
